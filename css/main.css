@@ -1,0 +1,351 @@
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: PlayfairDisplay-BlackItalic;
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/Poppins/Poppins-Medium.ttf'); 
+}
+
+/*////////////////////////////////////////////////////////////////// [REBOOT CSS e RESET CON MARGINI FISSI]*/
+*, *:before, *:after {
+  margin: 0px; 
+  padding: 0px; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Struttura ]*/
+.p-l-65 {padding-left: 65px;}
+.p-t-37 {padding-top: 37px;}
+.p-t-80 {padding-top: 80px;}
+.p-b-34 {padding-bottom: 34px;}
+.p-b-46 {padding-bottom: 46px;}
+.p-b-50 {padding-bottom: 50px;}
+.p-b-90 {padding-bottom: 90px;}
+.p-r-80 {padding-right: 80px;}
+.m-r-15 {margin-right: 15px;}
+.m-b-10 {margin-bottom: 10px;}
+
+/*---------------------------------------------*/
+.overlay1 {
+  position: relative;
+  z-index: 1;
+}
+.overlay1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+/*------------------------------------------------------------------
+[ Display Flex e mozilla webkit ]*/
+.flex-w,
+.flex-str,
+.flex-c-m,
+.flex-col-sb{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-w {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.flex-str {
+  -ms-align-items: stretch;
+  align-items: stretch;
+}
+.flex-c-m {
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.flex-col-sb {
+  justify-content: space-between;
+}
+.flex-col-c-m {
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col-sb {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.w-full {width: 100%;}
+
+.trans-04 {
+  -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Immagine side ]*/
+.imgside-parent {
+  position: relative;
+  z-index: 1;
+}
+
+.imgside {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.imgside-item {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/*==================================================================
+    TEXT
+==================================================================*/
+
+/*==================================================================
+[ Color ]*/
+.cl0 {color: #fff;}
+.cl1 {color: #333;}
+
+
+/*==================================================================
+    Dimensioni testo display smlxl
+==================================================================*/
+
+/*//////////////////////////////////////////////////////////////////
+[ S-Text 0 - 15 ]*/
+
+/*---------------------------------------------*/
+.s2-txt1 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.2;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ M-Text 16 - 25 ]*/
+
+/*---------------------------------------------*/
+.m2-txt1 {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #999;
+  line-height: 1.2;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ L-Text >= 26 ]*/
+.l1-txt1 {
+  font-family: PlayfairDisplay-BlackItalic;
+  font-size: 75px;
+  color: #333;
+  line-height: 1.1;
+}
+
+
+/*==================================================================
+Dimensione Shape
+==================================================================*/
+/*//////////////////////////////////////////////////////////////////
+[ Size ]*/
+.size1 {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.size2 {
+  width: 90px;
+  height: 80px;
+}
+
+.size3 {
+  width: 36px;
+  height: 36px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Width ]*/
+.wsize1 {
+  width: 50%;
+}
+
+.wsize2 {
+  max-width: 100%;
+}
+
+/*.respon1 {
+  width: 35%;
+}
+
+.respon2 {
+  width: 65%;
+}
+*/
+/*//////////////////////////////////////////////////////////////////
+[ Background ]*/
+.bg0 {background-color: #fff;}
+
+.bg-img1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*---------------------------------------------*/
+.wrappic1 {
+  display: block;
+}
+
+.wrappic1 img {
+  max-width: 100%;
+}
+
+/*---------------------------------------------*/
+.how-social {
+  color: #fff;
+  font-size: 22px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.how-social:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/*==================================================================
+Media Query mobile
+==================================================================*/
+
+
+/*//////////////////////////////////////////////////////////////////
+[ XL ]*/
+@media (max-width: 1200px) {
+  .respon1 {
+    width: 60%;
+  }
+
+  /*---------------------------------------------*/
+  .respon2 {
+    width: 40%;
+  }
+
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ L ]*/
+@media (max-width: 992px) {
+  .respon1 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /*---------------------------------------------*/
+  .respon2 {
+    width: 100%;
+    height: 500px;
+  }
+
+
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ SM ]*/
+@media (max-width: 576px) {
+  /*---------------------------------------------*/
+  .respon3 {
+    font-size: 60px;
+  }
+
+  
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ BTN-NEW ]*/
+#btn-new {
+    position:absolute;
+    transform:translate(0%,0%);
+    padding:10px 30px;
+    background:#fff;
+    border:2px solid #262626;
+    font-family:sans-serif;
+    color:#262626;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:18px;
+    display:block;
+    overflow:hidden;
+}
+#btn-new:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    color:#fff !important;
+    z-index:-1;
+    transform-origin: bottom left;
+    transform:rotate(-60deg);
+    transition:0.3s;
+}
+#btn-new:hover:before {
+    transform:rotate(0deg);
+    color:#fff !important ;
+}
+
+#btn-new:hover {
+    color:#fff !important ;
+}
+
+/*---------------------------------------------*/}
